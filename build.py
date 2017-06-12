@@ -12,7 +12,6 @@ df = pd.DataFrame(exam_data, index=labels)
 
 
 def solution():
-    """
-    Enter your code here
-    :return: dataframe which has attempts > 2
-    """
+    boolarray = df['attempts'] > 2
+    df1 = df[boolarray]
+    return df1
