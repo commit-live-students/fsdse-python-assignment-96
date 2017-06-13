@@ -16,3 +16,4 @@ def solution():
     Enter your code here
     :return: dataframe which has attempts > 2
     """
+    return df[df['attempts'] > 2]
