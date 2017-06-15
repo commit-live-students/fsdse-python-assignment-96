@@ -12,7 +12,8 @@ df = pd.DataFrame(exam_data, index=labels)
 
 
 def solution():
-    """
-    Enter your code here
-    :return: dataframe which has attempts > 2
-    """
+    df_new = df[df['attempts'] > 2]
+    print df_new
+    return df_new
+
+solution()
