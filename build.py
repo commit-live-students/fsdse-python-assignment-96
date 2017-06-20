@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-
 exam_data = {
     'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew', 'Laura', 'Kevin', 'Jonas'],
     'score': [12.5, 9, 16.5, np.nan, 9, 20, 14.5, np.nan, 8, 19],
@@ -10,9 +9,5 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 df = pd.DataFrame(exam_data, index=labels)
 
-
 def solution():
-    """
-    Enter your code here
-    :return: dataframe which has attempts > 2
-    """
+    return df[df['attempts']>2]
