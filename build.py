@@ -12,7 +12,9 @@ df = pd.DataFrame(exam_data, index=labels)
 
 
 def solution():
-    """
-    Enter your code here
-    :return: dataframe which has attempts > 2
-    """
+    msk = df['attempts']>2
+    sub_df = df[msk]
+    return sub_df
+
+
+solution()
