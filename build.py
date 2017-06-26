@@ -16,3 +16,5 @@ def solution():
     Enter your code here
     :return: dataframe which has attempts > 2
     """
+    new_df = df[(df['attempts']>2)]
+    return new_df
