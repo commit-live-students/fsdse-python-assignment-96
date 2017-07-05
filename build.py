@@ -8,11 +8,10 @@ exam_data = {
     'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
 labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
-df = pd.DataFrame(exam_data, index=labels)
+
 
 
 def solution():
-    """
-    Enter your code here
-    :return: dataframe which has attempts > 2
-    """
+    l1 = pd.DataFrame(exam_data, index=labels)
+    l = l1[l1['attempts'] > 2]
+    return l
